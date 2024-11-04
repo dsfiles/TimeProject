@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TimeProject
 {
-    internal class Time
+    internal class  Time
     {
         public int Hour, Minute;
         public double Second;
