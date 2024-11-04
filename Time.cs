@@ -8,8 +8,8 @@ namespace TimeProject
 {
     internal class  Time
     {
-        public int Hour, Minute;
-        public double Second;
+        private int Hour, Minute;
+        private double Second;
         public Time() { 
             Hour = 0; 
             Minute = 0; 
@@ -37,6 +37,13 @@ namespace TimeProject
             Console.WriteLine($"{t.Hour}:{t.Minute}:{t.Second}");
         }
 
-
+        public void SetSecond(double second)
+        {
+            this.Second = second;
+        }
+        public double GetSecond()
+        {
+            return this.Second;
+        }
     }
 }
